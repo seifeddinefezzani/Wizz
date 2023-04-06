@@ -63,5 +63,5 @@ There are two steps you need to do to be able to use the packaged model <br>
 Every message should have the size (1, config.MAX_SEQUENCE_LENGTH) <br>
 If length(message) > MAX_SEQUENCE_LENGTH: message = message[:MAX_SEQUENCE_LENGTH] else: message + 0 padding (add 0 until length(message) = MAX_SEQUENCE_LENGTH) <br>
 
-An exemple of input model: **array([1.0, 2.0, 3.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 .... 0.0])** <br>
+An exemple of input model (float) : **array([1.0, 2.0, 3.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 .... 0.0])** <br>
 The input of the model should be 2D (NUM_SAMPLES,  config.MAX_SEQUENCE_LENGTH)
