@@ -25,10 +25,9 @@ Once you created your environnement here are three files you need to run:
 ```
 
 -It will: <br>
-    - Create three folders <br>
-        - data/ where you will find the downloaded data from S3 <br>
-        - an empty folder: **feature_store/** where you will find later a json file called chars_to_ids that maps all possible characters to numerical ids <br>
-        - an empty folder: **model_store/** where you will find later all the models you trained with the validation scores and the train/validation losses <br>
+    - an empty folder **data/** where you will find the downloaded data from S3 <br>
+    - an empty folder: **feature_store/** where you will find later a json file called chars_to_ids that maps all possible characters to numerical ids <br>
+    - an empty folder: **model_store/** where you will find later all the models you trained with the validation scores and the train/validation losses <br>
     - Split the data into train & validation & test datasets for modeling <br>
 
 ```bash
