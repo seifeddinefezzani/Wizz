@@ -62,6 +62,8 @@ There are two steps you need to do to be able to use the packaged model <br>
     - First, you need to preprocess the text. You will find all the preprocessing done in the function preprare_data/ in train.py & test.py, the preprocessing is easy to code in any programming language <br>
     - Then, you need to load the json file and to map the message (after preprocessing) from chars to integers <br>
     - Every message should have the size (1, config.MAX_SEQUENCE_LENGTH) <br>
-        - If length(message) > MAX_SEQUENCE_LENGTH: message = message[:MAX_SEQUENCE_LENGTH] <br>
-        - If length(message) < MAX_SEQUENCE_LENGTH: message = message + 0 padding (add 0 until length(message) = MAX_SEQUENCE_LENGTH) <br>
-        - The input of the model should be 2D (NUM_SAMPLES,  config.MAX_SEQUENCE_LENGTH) <br>
+    - If length(message) > MAX_SEQUENCE_LENGTH: message = message[:MAX_SEQUENCE_LENGTH] <br>
+    - else: message = message + 0 padding (add 0 until length(message) = MAX_SEQUENCE_LENGTH) <br>
+
+An exemple of input model: **array([1.0, 2.0, 3.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 .... 0.0])** <br>
+The input of the model should be 2D (NUM_SAMPLES,  config.MAX_SEQUENCE_LENGTH)
